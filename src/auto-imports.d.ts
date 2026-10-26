@@ -37,6 +37,7 @@ declare global {
   const defineComponent: typeof import('vue').defineComponent
   const defineLocale: typeof import('../node_modules/@nuxt/ui/dist/runtime/composables/defineLocale').defineLocale
   const defineShortcuts: typeof import('../node_modules/@nuxt/ui/dist/runtime/composables/defineShortcuts').defineShortcuts
+  const diff: typeof import('./kit/utils/index').diff
   const eagerComputed: typeof import('@vueuse/core').eagerComputed
   const effectScope: typeof import('vue').effectScope
   const extendLocale: typeof import('../node_modules/@nuxt/ui/dist/runtime/composables/defineLocale').extendLocale
@@ -361,6 +362,7 @@ declare module 'vue' {
     readonly defineComponent: UnwrapRef<typeof import('vue')['defineComponent']>
     readonly defineLocale: UnwrapRef<typeof import('../node_modules/@nuxt/ui/dist/runtime/composables/defineLocale')['defineLocale']>
     readonly defineShortcuts: UnwrapRef<typeof import('../node_modules/@nuxt/ui/dist/runtime/composables/defineShortcuts')['defineShortcuts']>
+    readonly diff: UnwrapRef<typeof import('./kit/utils/index')['diff']>
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly extendLocale: UnwrapRef<typeof import('../node_modules/@nuxt/ui/dist/runtime/composables/defineLocale')['extendLocale']>

@@ -1,5 +1,9 @@
 # Kit changelog
 
+## 1.0.1
+- Saved styles store only the overrides on top of tokens.json, so tokens.json edits are never hidden by a saved style
+- Font files: correct @font-face format for ttf/otf
+
 ## 1.0.0
 - Token panel (U): Site variables (base spacers, sizes, typography, colors, breakpoints) and Block variables (grouped by component, found automatically)
 - Mobile / Desktop tabs, sliders with number inputs, "inherits mobile" / "use mobile"

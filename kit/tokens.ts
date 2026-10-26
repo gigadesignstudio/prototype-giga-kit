@@ -7,6 +7,13 @@ const short = new Map([
   ["text-transform", "case"],
 ]);
 
+const formats = new Map([
+  ["woff2", "woff2"],
+  ["woff", "woff"],
+  ["ttf", "truetype"],
+  ["otf", "opentype"],
+]);
+
 export function toCss(tokens: any, runtime = false) {
   const base: string[] = [];
   const s: string[] = [];
@@ -71,7 +78,7 @@ export function toCss(tokens: any, runtime = false) {
   const faces = Object.values(tokens.fonts).flatMap((font: any) =>
     (font.src || []).map(
       (f: any) =>
-        `@font-face {\n  font-family: ${font["font-family"].split(",")[0]};\n  src: url("${f.url}") format("${f.url.split(".").pop()}");\n  font-weight: ${f.weight || "normal"};\n  font-style: ${f.style || "normal"};\n  font-display: swap;\n}`,
+        `@font-face {\n  font-family: ${font["font-family"].split(",")[0]};\n  src: url("${f.url}") format("${formats.get(f.url.split(".").pop()) || "woff2"}");\n  font-weight: ${f.weight || "normal"};\n  font-style: ${f.style || "normal"};\n  font-display: swap;\n}`,
     ),
   );
 

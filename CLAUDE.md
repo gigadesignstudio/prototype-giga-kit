@@ -15,7 +15,7 @@ Stack: Vite + Vue 3 + TypeScript, vue-router, Tailwind v4, @vueuse/core, class-v
 
 ```
 tokens/tokens.json        every design value (see "Tokens"); edits regenerate src/assets/tokens.css
-styles/*.json             saved panel styles (Cmd+S); default.json loads on start
+styles/*.json             saved panel styles (Cmd+S): only the overrides on top of tokens.json; default.json loads on start
 src/data/layout.json      site name, header (logo, nav), footer content
 src/data/pages/<slug>.json  { title, blocks: [{ type, space?, ...props }] }; home.json → "/", others → "/<slug>"
 src/pages/Page.vue        renders a page's blocks through the `components` Map
@@ -47,6 +47,7 @@ When the user does ask for a tool change: make it, bump `kit/VERSION` (minor for
 | `typography` | block | named text styles, value = base style name | `"title": "l-display"` |
 | `theme.breakpoint.s` | site | the one breakpoint (mobile below, desktop above) | `"900px"` |
 
+- `tokens.json` is the source of truth. Saved styles (`styles/*.json`) only hold what a designer changed in the panel, merged on top at load. To make a designer's tweak permanent, copy it from the style into `tokens.json` and remove it from the style.
 - Any value can be `{ "default": …, "s": … }`: `default` is mobile, `s` is ≥ breakpoint. Omit `s` when it's the same.
 - Class names: spacers → `p-<name>`, `gap-x-<name>`, `mt-<name>`…; sizes → `w-<name>`, `size-<name>`; colors → `bg-<name>`, `text-<name>`; text styles → `typo-<name>`. Breakpoint prefix: `s:`.
 

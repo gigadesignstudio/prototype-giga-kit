@@ -170,7 +170,7 @@ async function load() {
 async function save() {
   const slug = slugify(title.value);
   if (!slug) return;
-  const style = { title: title.value, slug, tokens: tokens.value };
+  const style = { title: title.value, slug, tokens: diff(base, tokens.value) };
   localStorage.setItem(`styles:${slug}`, JSON.stringify(style));
   await fetch("/__styles", { method: "POST", body: JSON.stringify(style) });
   await load();
