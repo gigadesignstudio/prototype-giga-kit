@@ -1,0 +1,103 @@
+{
+  "site": {
+    "name": "Studio"
+  },
+  "header": {
+    "logo": {
+      "src": "/assets/logo.svg",
+      "alt": "Studio"
+    },
+    "nav": [
+      {
+        "label": "Projects",
+        "to": "/projects"
+      },
+      {
+        "label": "About",
+        "to": "/about"
+      }
+    ],
+    "menu": {
+      "open": "Menu",
+      "close": "Close"
+    }
+  },
+  "footer": {
+    "title": "Get in touch",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur.",
+    "cta": {
+      "label": "Contact",
+      "to": "mailto:hello@example.com"
+    },
+    "columns": [
+      {
+        "label": "Links",
+        "links": [
+          {
+            "label": "Link",
+            "to": "#"
+          },
+          {
+            "label": "Link",
+            "to": "#"
+          },
+          {
+            "label": "Link",
+            "to": "#"
+          }
+        ]
+      },
+      {
+        "label": "Links",
+        "links": [
+          {
+            "label": "Link",
+            "to": "#"
+          },
+          {
+            "label": "Link",
+            "to": "#"
+          },
+          {
+            "label": "Link",
+            "to": "#"
+          }
+        ]
+      },
+      {
+        "label": "Links",
+        "links": [
+          {
+            "label": "Link",
+            "to": "#"
+          },
+          {
+            "label": "Link",
+            "to": "#"
+          },
+          {
+            "label": "Link",
+            "to": "#"
+          }
+        ]
+      },
+      {
+        "label": "Links",
+        "links": [
+          {
+            "label": "Link",
+            "to": "#"
+          },
+          {
+            "label": "Link",
+            "to": "#"
+          },
+          {
+            "label": "Link",
+            "to": "#"
+          }
+        ]
+      }
+    ]
+  }
+}

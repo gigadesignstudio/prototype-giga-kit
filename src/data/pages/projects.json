@@ -1,0 +1,181 @@
+{
+  "title": "Projects",
+  "blocks": [
+    {
+      "type": "table",
+      "columns": [
+        {
+          "label": "Name",
+          "span": 2
+        },
+        {
+          "label": "Year",
+          "span": 1,
+          "icon": "sort"
+        },
+        {
+          "label": "Category",
+          "span": 3,
+          "icon": "filter",
+          "count": 1
+        },
+        {
+          "label": "Services",
+          "span": 3,
+          "icon": "filter",
+          "count": 1
+        },
+        {
+          "label": "Details",
+          "span": 3
+        }
+      ],
+      "rows": [
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": true,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": true,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": true,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        },
+        {
+          "client": "Project Name",
+          "date": "2024",
+          "ongoing": false,
+          "transformations": "Category A, Category B",
+          "units": "Service A, Service B",
+          "details": "Lorem ipsum dolor sit amet consectetur.",
+          "to": "#"
+        }
+      ]
+    }
+  ]
+}
