@@ -8,7 +8,7 @@ description: Update this project's kit (token panel, highlight, picker, shortcut
 The kit is `src/kit/` and `kit/`. Everything else is the project's site and must not change.
 
 1. **Source**: read `kit/SOURCE` (template repo URL or local path). If missing, ask the user for it.
-2. **Clean tree**: run `git status`. If `src/kit/` or `kit/` have local changes, show them and ask whether to keep them (they'll be overwritten) before continuing. Commit or stash other changes only if the user agrees.
+2. **Clean tree**: if this isn't a git repo, ask to run `git init && git add -A && git commit -m "before kit upgrade"` first (the upgrade uses git). Run `git status`. If `src/kit/` or `kit/` have local changes, show them and ask whether to keep them (they'll be overwritten) before continuing. Commit or stash other changes only if the user agrees.
 3. **Fetch**:
    ```bash
    git remote get-url kit || git remote add kit <source>

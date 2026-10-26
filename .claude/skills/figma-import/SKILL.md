@@ -9,6 +9,12 @@ Input: Figma frame URLs, one per page (the first is the home page). Optional: wh
 
 The kit (panel, highlight, picker, generator) already exists. Only the **site** is generated: `tokens/tokens.json`, `src/data/layout.json`, `src/data/pages/*.json`, `src/components/{layout,blocks,elements}`, `public/assets`. Follow `CLAUDE.md` for every rule not repeated here.
 
+## Before anything: check the setup
+
+- Figma tools: the Figma MCP tools (`get_design_context`, `get_screenshot`, `get_metadata`, `get_variable_defs`) and the `figma:figma-design-to-code` skill must be available. If they aren't, stop and tell the user to run `/plugin install figma@claude-plugins-official` in Claude Code, then `/mcp` → **figma** → log in, and restart Claude Code in this folder. If the tools exist but return an auth error, point them to `/mcp`.
+- Dependencies: if `node_modules/` is missing, run `npm install`.
+- Git: if this isn't a git repo, suggest `git init && git add -A && git commit -m "start"` so the import can be reviewed and undone.
+
 ## Phase 1 — Analyze all frames, then STOP
 
 1. Load the `figma:figma-design-to-code` skill. For **every** frame: `get_metadata`, `get_screenshot`, `get_design_context` (if the response is sparse, request the child sections separately), `get_variable_defs`. Save screenshots to `figma/<page>.png`. Download image/SVG assets once into `public/assets/` (dedupe by content, name by role: `logo.svg`, `arrow.svg`).
